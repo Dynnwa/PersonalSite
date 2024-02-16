@@ -6,7 +6,7 @@ Welcome to my site! The primary goal of this website is to provide an interactiv
 
 ## Primary Tasks
 
-- Create app: Download react and set up environment
+- ~~Create app: Download react and set up environment~~
 - Create the page's HTML
   - Home
   - Main
@@ -28,6 +28,9 @@ Welcome to my site! The primary goal of this website is to provide an interactiv
   - Clickable car
   - Add asset
   - Add sound
+- Deploy
+- Update readme
+- Add to resume
 
 ## Stretch Goals
 
