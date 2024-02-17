@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css'; 
+import arrow from './assets/Guidearrow.gif'
+import car from './assets/Car.gif';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p className="Title">
+          Welcome to Danny Town
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p className="Sub-header">
+          Lets take a Drive
+        </p>
+        <img src={arrow} alt='arrow'className="arrow"/>
+        <img src={car} alt="car"/>
       </header>
     </div>
   );
