@@ -1,8 +1,8 @@
 import './Landing.css';
 import './index.css'; 
 import arrow from './assets/Guidearrow.gif'
-import car from './assets/Car.gif';
 import Home from './Home';
+import Controller from './Controller';
 
 function Landing() {
   return (
@@ -15,7 +15,7 @@ function Landing() {
           Lets take a Drive
         </p>
         <img src={arrow} alt='arrow'className="img"/>
-        <img src={car} alt="car" className="img"/>
+        <Controller/>
       </header>
       <Home />
     </div>
