@@ -1,0 +1,13 @@
+.home-container {
+    display: flex;
+    height: 100vh; /* Set the container height to full viewport height */
+  }
+
+.page-button {
+    font-size: calc(40px + 2vmin);
+    
+    img {
+        height: 100px;
+        width: auto;
+      }
+  }

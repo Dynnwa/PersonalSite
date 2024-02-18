@@ -1,11 +1,26 @@
 .App {
   text-align: center;
   font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f3d0aeb5;
+
+  button {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: transparent;
+    border: none;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 5%;
+    height: auto;
+  }
 }
 
 .App-header {
-  background-color: #f3d0aeb5;
-  min-height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,12 +37,10 @@
 
 .Title {
   margin-top: 0;
-  margin-bottom: 5%;
+  margin-bottom: 0;
   font-size: calc(50px + 2vmin);
 }
 
-img {
-  width: 5%;
-  height: 5%;
+.img {
   margin-bottom: 5%;
 }

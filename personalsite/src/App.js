@@ -1,23 +1,17 @@
-import './App.css';
-import './index.css'; 
-import arrow from './assets/Guidearrow.gif'
-import car from './assets/Car.gif';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import About from './pages/About';
+import Landing from './Landing';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p className="Title">
-          Welcome to Danny Town
-        </p>
-        <p className="Sub-header">
-          Lets take a Drive
-        </p>
-        <img src={arrow} alt='arrow'className="arrow"/>
-        <img src={car} alt="car"/>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
