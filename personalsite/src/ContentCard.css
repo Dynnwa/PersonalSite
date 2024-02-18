@@ -1,0 +1,15 @@
+.content-container {
+    padding-top: 3%;
+    padding-left: 10%;
+    width: 80%
+}
+
+.title {
+    font-size: calc(30px + 2vmin);
+    padding-bottom: 2%;
+}
+
+.content {
+    white-space: normal;
+    word-wrap: break-word;
+}

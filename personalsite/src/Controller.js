@@ -88,7 +88,7 @@ function Controller() {
     <img
       src={Car}
       alt="car"
-      className="img"
+      className="car"
       style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
     />
   );

@@ -9,13 +9,13 @@ function Home() {
     <div className="home-container">
       <div className="grid">
         <div className="about">
-                <PageButton className="page-button" text="About" imageSrc={House1} linkTo={"/about"}/>
+                <PageButton className="page-button" text="About" imageSrc={House1} link={'/about'}/>
         </div>
         <div className="experience"> 
-                <PageButton className="page-button" text="Experience"imageSrc={House3}linkTo={"/about"}/>
+                <PageButton className="page-button" text="Experience"imageSrc={House3} link={'/experience'}/>
         </div>
-      <PageButton className="page-button" text="Resume"imageSrc={House3}linkTo={"/about"}/>
-      <PageButton className="page-button" text="Portfolio"imageSrc={House1}linkTo={"/about"}/>
+      <PageButton className="page-button" text="Resume"imageSrc={House3}/>
+      <PageButton className="page-button" text="Portfolio"imageSrc={House1}/>
       </div>
     </div>
   );

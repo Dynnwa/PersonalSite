@@ -14,7 +14,7 @@ function Landing() {
         <p className="Sub-header">
           Lets take a Drive
         </p>
-        <img src={arrow} alt='arrow'className="img"/>
+        <img src={arrow} alt='arrow'className="arrow"/>
         <Controller/>
       </header>
       <Home />

@@ -1,0 +1,22 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 5%;
+    padding-top: 3rem;
+  }
+    
+.back-button {   
+    font-size: calc(30px + 2vmin);
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    height: 2rem;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: transparent;
+    border: none;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+  }

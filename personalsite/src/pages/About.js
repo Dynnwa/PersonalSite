@@ -1,12 +1,20 @@
 import React from 'react';
+import './About.css'
+import Menu from '../Menu';
+import Title from '../Title';
+import ContentCard from '../ContentCard';
 
-const AboutPage = () => {
+const About = () => {
   return (
-    <div>
-      <h2>About Page</h2>
-      {/* Add your content for the About page */}
+    <div className="about-container">
+      <Menu/>
+      <Title text="About"/>
+      <div className="content-cards">
+        <ContentCard title={"Personal"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
+        <ContentCard title={"Profesional"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
+      </div>
     </div>
   );
 };
 
-export default AboutPage;
+export default About;

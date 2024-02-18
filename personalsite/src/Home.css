@@ -8,13 +8,13 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 300px;
+  row-gap: 150px;
 }
 
 .about {
-  padding-right: 300px;
+  padding-right: 250px;
 }
 
 .experience {
-  padding-left: 300px;
+  padding-left: 250px;
 }
