@@ -3,8 +3,9 @@ import './Experience.css'
 import Menu from '../Menu';
 import Title from '../Title';
 import ContentCard from '../ContentCard';
-import arrow from '../assets/Guidearrow.gif'
-
+import Copperleaf from '../assets/Copperleaf.png'
+import Diligent from '../assets/Diligent.png'
+import SAP from '../assets/SAP.png'
 
 const Experience = () => {
   return (
@@ -12,12 +13,12 @@ const Experience = () => {
       <Menu/>
       <Title text="Experience"/>
       <div className="content-cards">
-        <ContentCard title={"Personal"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
-        <img src={arrow} alt='arrow'className="company-logo"/>
-        <img src={arrow} alt='arrow'className="arrow"/>
-        <ContentCard title={"Profesional"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
-        <ContentCard title={"Profesional"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
-        <img src={arrow} alt='arrow'className="arrow"/>
+        <ContentCard title={"SWE Intern @Copperleaf"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
+        <img src={Copperleaf} alt='arrow'className="company-logo"/>
+        <img src={Diligent} alt='arrow'className="company-logo"/>
+        <ContentCard title={"SWE Intern @Diligent"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
+        <ContentCard title={"Devops Intern @SAP"} info={"sadfffffffffffdddddsafsadfasdfasdfsadddasfdsadfdfffffffffddddddafssdafasdfasdfsadfsadfasd fsdafasdfffffffff fssssssssssssssssssssssssssffffffffffffffffffffffffffff"}/>
+        <img src={SAP} alt='arrow'className="company-logo"/>
       </div>
     </div>
   );

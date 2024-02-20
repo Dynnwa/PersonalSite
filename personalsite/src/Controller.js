@@ -48,9 +48,21 @@ function Controller() {
       if (keyState.s) dy += step;
       if (keyState.d) dx += step;
 
-      setPosition((prevPos) => ({ x: prevPos.x + dx, y: prevPos.y + dy }));
+      const newPosition = {
+        x: position.x + dx,
+        y: position.y + dy,
+      };
 
-      window.scrollBy({ top: dy * scrollFactor, left: dx * scrollFactor, behavior: 'smooth' });
+      // Check if the new position is within the boundaries of the viewport
+      if (
+        newPosition.x >= 0 &&
+        newPosition.y >= 0 &&
+        newPosition.x + step <= window.innerWidth - 500 &&
+        newPosition.y + step <= window.innerHeight - 50
+      ) {
+        setPosition(newPosition);
+        window.scrollBy({ top: dy * scrollFactor, left: dx * scrollFactor, behavior: 'smooth' });
+      }
     }
   };
 
@@ -81,8 +93,7 @@ function Controller() {
       window.removeEventListener('keydown', handleKeyPress);
       window.removeEventListener('keyup', handleKeyRelease);
     };
-  }, []);
-  
+  }, [position]);
 
   return (
     <img

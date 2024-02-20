@@ -15,7 +15,7 @@ function Home() {
                 <PageButton className="page-button" text="Experience"imageSrc={House3} link={'/experience'}/>
         </div>
       <PageButton className="page-button" text="Resume"imageSrc={House3}/>
-      <PageButton className="page-button" text="Portfolio"imageSrc={House1}/>
+      <PageButton className="page-button" text="Portfolio"imageSrc={House1} link={'/portfolio'}/>
       </div>
     </div>
   );

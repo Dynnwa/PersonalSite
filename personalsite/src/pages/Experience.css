@@ -1,15 +1,17 @@
 .experience-container {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f3d0aeb5;
-    height: 100vh;
+    height: 150vh;
   }
 
 .content-cards {
     padding-left: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 10%;
 }
 
-.company-log {
-    margin-left: 10%;
+.company-logo {
+    padding-left: 10%;
+    padding-top: 3%;
 }
