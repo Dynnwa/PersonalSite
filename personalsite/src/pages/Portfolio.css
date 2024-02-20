@@ -9,3 +9,15 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.content-button {
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    margin-left: 2%;
+}
+
+.content-button:hover {
+    transform: scale(1.1);
+  }

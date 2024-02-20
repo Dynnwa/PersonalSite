@@ -43,6 +43,9 @@ function Landing() {
           <p className="Sub-header">
             Lets take a Walk
           </p>
+          <p className="intructions">
+            (Use WASD)
+          </p>
           <img src={arrow} alt='arrow'className="arrow"/>
           <Controller/>
         </header>

@@ -53,7 +53,6 @@ function Controller() {
         y: position.y + dy,
       };
 
-      // Check if the new position is within the boundaries of the viewport
       if (
         newPosition.x >= 0 &&
         newPosition.y >= 0 &&

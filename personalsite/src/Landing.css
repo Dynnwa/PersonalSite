@@ -30,9 +30,15 @@
 
 .Sub-header {
   margin-top: 0;
-  margin-bottom: 5%; 
+  margin-bottom: 0px;
   font-size: calc(25px + 2vmin);
   color: rgb(87, 87, 87);
+}
+
+.instructions {
+  margin-top: 0;
+  margin-bottom: 5%;
+  font-size: calc(25px + 2vmin);
 }
 
 .Title {
