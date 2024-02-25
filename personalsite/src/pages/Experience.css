@@ -1,7 +1,7 @@
 .experience-container {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f3d0aeb5;
-    height: 150vh;
+    height: 200vh;
   }
 
 .content-cards {
@@ -14,4 +14,6 @@
 .company-logo {
     padding-left: 10%;
     padding-top: 3%;
+    width: 70%;
+    height: auto;
 }
