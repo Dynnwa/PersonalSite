@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Car from './assets/Car.gif';
 import './Controller.css'; // Make sure to create a CSS file for styling
 
-function Controller() {
+function Controller({isMenu}) {
+  const imageRef = useRef(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const keyState = {
@@ -56,8 +57,8 @@ function Controller() {
       if (
         newPosition.x >= 0 &&
         newPosition.y >= 0 &&
-        newPosition.x + step <= window.innerWidth - 500 &&
-        newPosition.y + step <= window.innerHeight - 50
+        newPosition.x + step <= window.innerWidth-(window.devicePixelRatio/2)*imageRef.current.offsetWidth &&
+        newPosition.y + step <= 2*(window.innerHeight-(window.devicePixelRatio/2)*imageRef.current.offsetHeight)
       ) {
         setPosition(newPosition);
         window.scrollBy({ top: dy * scrollFactor, left: dx * scrollFactor, behavior: 'smooth' });
@@ -85,6 +86,11 @@ function Controller() {
   };
 
   useEffect(() => {
+    setPosition({ x: window.innerWidth/2-imageRef.current.offsetWidth/2, 
+                  y: window.innerHeight-window.innerHeight/(window.devicePixelRatio/0.5) });
+  }, []);
+
+  useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);
     window.addEventListener('keyup', handleKeyRelease);
 
@@ -94,12 +100,14 @@ function Controller() {
     };
   }, [position]);
 
+
   return (
     <img
+      ref={imageRef}
       src={Car}
       alt="car"
       className="car"
-      style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
+      style={isMenu ? { transform: `translateX(45vw)` } : { transform: `translate(${position.x}px, ${position.y}px)` }}
     />
   );
 }

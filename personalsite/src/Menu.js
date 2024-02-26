@@ -4,8 +4,7 @@ import Controller from './Controller';
 
 const Menu = () => {
   return (
-      <div className="menu">      
-      <Controller/>
+      <div className="menu">    
       <a href="/">  
         <button className="back-button">
           <div>

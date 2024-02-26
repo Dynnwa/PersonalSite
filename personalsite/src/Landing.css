@@ -51,3 +51,13 @@
 .arrow {
   margin-bottom: 5%;
 }
+
+.controller{
+  position: absolute;
+  top: 0;
+  left: 0;
+  img {
+    padding: 0;
+    margin: 0;
+  }
+}
