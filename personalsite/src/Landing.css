@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #f3d0aeb5;
+  overflow: hidden;
 
   button {
     font-family: 'Comic Sans MS', cursive;

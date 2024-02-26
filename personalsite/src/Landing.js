@@ -47,7 +47,14 @@ function Landing() {
             (Use WASD)
           </p>
           <img src={arrow} alt='arrow'className="arrow"/>
-          <Controller/>
+          <div className="controller"         style={{
+          position: 'absolute',
+          top: `0`, // Adjust as needed
+          left: `0`, // Adjust as needed
+          zIndex: 2,
+        }}>
+            <Controller/>
+          </div>
         </header>
         <Home />
       </div>
