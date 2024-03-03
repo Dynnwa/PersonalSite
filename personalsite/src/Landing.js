@@ -41,7 +41,7 @@ function Landing() {
             Welcome to Danny Town
           </p>
           <p className="Sub-header">
-            Lets take a Walk
+            Let's take a Walk
           </p>
           <p className="intructions">
             (Use WASD)
