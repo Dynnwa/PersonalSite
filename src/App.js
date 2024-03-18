@@ -7,14 +7,14 @@ import Landing from './Landing';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/experience" element={<Experience />} />
+          <Route exact path="/portfolio" element={<Portfolio />} />
+        </Routes>
+      </Router>
   );
 };
 

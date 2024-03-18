@@ -1,6 +1,5 @@
 import React from 'react';
 import './Menu.css'
-import Controller from './Controller';
 
 const Menu = () => {
   return (
