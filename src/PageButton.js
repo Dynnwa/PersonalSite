@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PageButton.css'
 
 const PageButton = ({ text, imageSrc, link }) => {
   return (
-        <a href={link}>  
+        <Link to={link}>  
            <button className="page-button">
             <div>
                 {text}
             </div>
             <img src={imageSrc} alt="background" className="page-button-image" />
             </button>
-        </a>
+        </Link>
    );
 };
 
